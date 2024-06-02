@@ -1,84 +1,130 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 24px;
-  font-weight: 400;
+  font-weight: 500;
 
-  color: #0f0f0f;
-  background-color: #f6f6f6;
+  color: var(--first-color);
+  background-color: var(--bg-color);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --bg-color: #222831;
+  --sub-color: #393E46;
+  --first-color: #FFD369;
+  --second-color: #EEEEEE;
+}
+h1{
+  margin: 50px 0;
 }
 
-.container {
-  margin: 0;
-  padding-top: 1vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.container{
+  max-width: 768px;
+  align-items: center;
   text-align: center;
+  margin: 0 auto;
 }
 
-.row {
-  display: block;
+form{
+  max-width: 768px;
+  margin: 0 auto;
+  text-align: left;
+  font-weight: 600;
+  padding: 0 10px;
 }
 
-
-h1 {
-  text-align: center;
-}
-
-input,
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  color: #0f0f0f;
-  background-color: #ffffff;
-  transition: border-color 0.3s;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+.input{
+  border: none;
   outline: none;
+  border-radius: 15px;
+  height: 50px;
+  background-color: var(--sub-color);
+  width: 100%;
+  padding-left: 20px;
+  margin: 5px 0 10px 0;
+  color: var(--second-color);
+  font-size: 16px;
+  transition: box-shadow 0.13s linear;
+  transition: border 0.14s linear;
+  caret-color: transparent;
+}
+.input:hover{
+  box-shadow: inset 0px 0px 15px var(--bg-color);
+}
+.input:active{
+  box-shadow: inset 0px 0px 15px var(--bg-color);
 }
 
-button {
-  cursor: pointer;
+.button{
+  border: none;
+  border-radius: 15px;
+  height: 50px;
+  margin-top: 5px;
+  background-color: var(--first-color);
+  width: 100%;
+  color: var(--bg-color);
+  font-size: 18px;
+  font-weight: 600;
+  transition: box-shadow 0.13s linear;
 }
 
-button:hover {
-  border-color: #396cd8;
+.button:hover{
+  box-shadow: 0px 0px 15px var(--first-color);
 }
-button:active {
-  border-color: #396cd8;
-  background-color: #e8e8e8;
-}
-
-#greet-input {
-  margin-right: 5px;
+.button:active{
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    color: #f6f6f6;
-    background-color: #2f2f2f;
+footer{
+  width: 100%;
+  height: 100px;
+  background-color: var(--sub-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  padding-top: 20px;
+  color: var(--second-color);
+  opacity: 0.5;
+  font-size: 14px;
+}
+.crabLogo{
+  margin: 80px auto;
+  max-height: 400px;
+}
+.wrong_code{
+  margin: 5px 0px 25px;
+  color: #E43A25;
+  display: none;
+  transition: display 0.13s linear;
+}
+
+@media (min-width: 1024px) {
+  .container{
+    max-width: 1024px;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
   }
-
-  a:hover {
-    color: #24c8db;
+  .button{
+    height: 65px;
+    font-size: 20px;
+    border-radius: 20px;
   }
-
-  input,
-  button {
-    color: #ffffff;
-    background-color: #0f0f0f98;
+  .input{
+    height: 65px;
+    font-size: 20px;
+    border-radius: 20px;
   }
-  button:active {
-    background-color: #0f0f0f69;
+  h1{
+    margin: 60px 0;
   }
 }
