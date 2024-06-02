@@ -11,3 +11,16 @@ form.addEventListener("submit", function (event) {
         window.location.replace("index.html");
     }
 });
+
+function change_ferris(e){
+    let s = e.getAttribute('src');
+    var num = s.substr(s.length - 5)[0].charCodeAt(0) - 48;
+    
+    num += 1;
+    if(num == 7){
+        num = 1;
+    }
+
+    var f_string = "assets/ferris/" + num + ".svg";
+    e.setAttribute('src', f_string);
+};
