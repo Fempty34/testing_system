@@ -5,10 +5,43 @@
     <link rel="stylesheet" href="styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Testing system</title>
-    <script type="module" src="/main.js" defer></script>
+    <link rel="icon" href="assets/ferris/2.svg" type="image/x-icon">
   </head>
 
   <body>
+    <header class="header">
+      <div class="container">
+          <div class="header__icon">
+              <a href="/">Testing system</a>
+          </div>
+          <nav>
+              <ul class="header__list">
+                  <li class="header__list-item active"><a href="#">Tasks</a></li>
+                  <li class="header__list-item"><a href="#">Contests</a></li>
+                  <li class="header__list-item"><a href="#">Create</a></li>
+                  <li class="header__list-item"><a href="#">Rating</a></li>
+                  <li class="header__list-item"><a href="#">Profile</a></li>
+              </ul>
+              <ul class="header__list header__list--mobile">
+                  <li class="header__list-item active"><a href="#" aria-label="Перейти на главную страницу">
+                          <img src="assets/menu/tasks.svg" alt="значок главной">
+                      </a></li>
+                  <li class="header__list-item"><a href="#" aria-label="Перейти на страницу профиля">
+                          <img src="assets/menu/contests.svg" alt="значок профиля">
+                      </a></li>
+                  <li class="header__list-item"><a href="#" aria-label="Перейти на страницу команд">
+                          <img src="assets/menu/create.svg" alt="значок команд">
+                      </a></li>
+                  <li class="header__list-item"><a href="#" aria-label="Перейти на страницу моей команды">
+                          <img src="assets/menu/rating.svg" alt="значок моей комманды">
+                      </a></li>
+                  <li class="header__list-item"><a href="№" aria-label="Перейти на страницу уведомлений">
+                          <img src="assets/menu/profile.svg" alt="значок уведомлений">
+                      </a></li>
+              </ul>
+          </nav>
+      </div>
+    </header>
       <div class="container">
         <h1>Enter your invite code</h1>
         
