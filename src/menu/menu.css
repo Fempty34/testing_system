@@ -4,7 +4,7 @@
   line-height: 24px;
   font-weight: 500;
 
-  color: var(--first-color);
+  color: var(--second-color);
   background-color: var(--bg-color);
 
   font-synthesis: none;
@@ -20,7 +20,6 @@
 }
 
 .container{
-  max-width: 768px;
   align-items: center;
   text-align: center;
   margin: 0 auto;
@@ -50,6 +49,10 @@ dialog {
 .header a {
   color: var(--font-color);
 }
+.header{
+  padding-left: 40px;
+  padding-right: 40px;
+}
 
 .header .container {
   display: flex;
@@ -61,7 +64,7 @@ dialog {
 .header__list {
   display: flex;
   list-style: none;
-  gap: 35px;
+  gap: 40px;
 }
 
 .header__list--mobile {
@@ -120,3 +123,8 @@ a {
   }
 }
 
+@media(min-width:1024px){
+  .header{
+    font-size: 20px;
+  }
+}
