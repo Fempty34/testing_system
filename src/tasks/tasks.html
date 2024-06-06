@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="tasks.css" />
+    <link rel="stylesheet" href="../theme.css" />
+    <link rel="stylesheet" href="..//menu/menu.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testing system</title>
+    <link rel="icon" href="assets/ferris/2.svg" type="image/x-icon">
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+          <div class="header__icon">
+              <a href="/">Testing system</a>
+          </div>
+          <nav>
+              <ul class="header__list">
+                  <li class="header__list-item active"><a href="#">Tasks</a></li>
+                  <li class="header__list-item"><a href="#">Contests</a></li>
+                  <li class="header__list-item"><a href="#">Create</a></li>
+                  <li class="header__list-item"><a href="#">Rating</a></li>
+                  <li class="header__list-item"><a href="#">Profile</a></li>
+              </ul>
+              <ul class="header__list header__list--mobile">
+                  <li class="header__list-item active"><a href="#" aria-label="Go to tasks">
+                          <img src="../menu/tasks.svg" alt="Go to tasks">
+                      </a></li>
+                  <li class="header__list-item"><a href="#" aria-label="Go to contests">
+                          <img src="../menu/contests.svg" alt="Go to contests">
+                      </a></li>
+                  <li class="header__list-item"><a href="#" aria-label="Go create">
+                          <img src="../menu/create.svg" alt="Go create">
+                      </a></li>
+                  <li class="header__list-item"><a href="#" aria-label="Go to rating">
+                          <img src="../menu/rating.svg" alt="Go to rating">
+                      </a></li>
+                  <li class="header__list-item"><a href="№" aria-label="Go to profile">
+                          <img src="../menu/profile.svg" alt="Go to profile">
+                      </a></li>
+              </ul>
+          </nav>
+      </div>
+    </header>
+    <div class="main__container">
+      <div class="search-container">
+        <form class = "search-form">
+            <input type="search" value="" placeholder="Enter task's name or id" class="search-input">
+            <button type="submit" class="search-button">
+                <img src="imgs/search.svg" alt="поиск">
+            </button>
+        </form>
+        <button class = "filters__button">
+            <img src="imgs/filters.svg" alt="фильтры">
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

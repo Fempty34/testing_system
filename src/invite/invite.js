@@ -8,7 +8,7 @@ form.addEventListener("submit", function (event) {
         code.style.border = "solid 2px #E43A25"
     }
     else{
-        window.location.replace("index.html");
+        window.location.replace("../tasks/tasks.html");
     }
 });
 
@@ -21,6 +21,6 @@ function change_ferris(e){
         num = 1;
     }
 
-    var f_string = "assets/ferris/" + num + ".svg";
+    var f_string = "ferris/" + num + ".svg";
     e.setAttribute('src', f_string);
 };
