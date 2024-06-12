@@ -10,7 +10,16 @@
     align-items: center;
     flex: 1 0 auto;
     margin: 0;
+    transition: box-shadow 0.13s linear;
+    box-shadow: none;
 }
+.search-form:hover{
+    box-shadow: inset 0px 0px 15px var(--bg-color);
+}
+.search-form:active{
+    box-shadow: inset 0px 0px 15px var(--bg-color);
+}
+
 .search-input{
     background: none;
     width: 100%;
@@ -24,6 +33,7 @@
     }
     caret-color: transparent;
 }
+
 .search-button{
     height: 24px;
     width: 24px;
@@ -58,11 +68,16 @@
 }
 
 
-
 .tasks-list{
     max-width: 768px;
     padding: 10px;
     padding-top: 20px;
+}
+.task-container:hover{
+    box-shadow: none;
+}
+.task-container:active{
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 .task-container{
     border-radius: 10px;
@@ -72,6 +87,13 @@
     max-width: 768px;
     margin: 10px 0;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;  
+    transition: box-shadow 0.13s linear; 
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); 
+}
+.solved{
+    opacity: 0.75;
 }
 .task-status img{
     width: 70px;
@@ -94,6 +116,8 @@
 .task-name span{
     color: var(--first-color);
     margin-right: 8px;
+    font-size: 19px;
+    font-weight: 600;
 }
 .task-text img{
     width: 30px;
@@ -116,7 +140,6 @@
     font-size: 14px;
     white-space: nowrap;
 }
-
 
 @media (min-width: 768px){
     .search-form{
