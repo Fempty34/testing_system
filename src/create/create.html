@@ -14,7 +14,7 @@
         <header class="header">
             <div class="container">
                 <div class="header__icon">
-                    <a href="/">Testing system</a>
+                    <a href="../tasks/tasks.html">Testing system</a>
                 </div>
                 <nav>
                     <ul class="header__list">
@@ -48,7 +48,7 @@
             <form action="" class="task-create-form">
                 <label for="task-difficult">Choose difficult and name</label>
                 <div class="task-create-title">
-                    <select name="task-difficult" class="task-difficult-select">
+                    <select name="task-difficult" class="task-difficult-select" required>
                         <option value="11" class="difficult-option">SSS</option>
                         <option value="10" class="difficult-option">SS</option>
                         <option value="9" class="difficult-option">S</option>
@@ -65,8 +65,14 @@
                     <input type="text" class="task-name-select" placeholder="Select name">
                 </div>
                 <label for="task-description">Enter task description</label>
-                <textarea name="task-description" class="task-description" placeholder="Enter task description"></textarea>
+                <textarea name="task-description" class="task-description" placeholder="Enter task description" autoco></textarea>
+                <label class="input-file">
+                    <input type="file" id="files" name="file"> 
+                    <span class="input-file-text" type="text">Select file</span>       
+                </label>
+                <input type="submit" value="Create" class="button">         
             </form>
         </div>
+        <script src="create.js"></script>
     </body>
 </html>

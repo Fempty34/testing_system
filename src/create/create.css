@@ -6,6 +6,7 @@
 .task-create-form{
   align-items: center;
   text-align: center;
+  color: var(--second-color);
 }
 
 
@@ -22,7 +23,10 @@
   color: var(--first-color);
   font-size: 17px;
   font-weight: 600;
-  
+  transition: box-shadow 0.13s linear; 
+}
+.task-difficult-select:focus{
+  box-shadow: 0px 0px 15px black;
 }
 
 .task-name-select{
@@ -33,19 +37,17 @@
   appearance: none;
   outline: none;
   color: var(--second-color);
-  &::-webkit-search-cancel-button {
-      appearance: none;
-  }
+  transition: box-shadow 0.13s linear; 
   caret-color: transparent;
   background-color: var(--sub-color);
   border-radius: 8px;
   padding-left: 10px;
   font-size: 16px;
 }
-
-.task-name-select:active{
-  box-shadow: inset 0px 0px 15px var(--bg-color);
+.task-name-select:focus{
+  box-shadow: 0px 0px 15px black;
 }
+
 .task-description{
   margin-top: 10px;
   overflow: hidden;
@@ -59,4 +61,66 @@
   padding: 10px;
   border: none !important;
   font-size: 16px;
+  resize: vertical;
+  transition: box-shadow 0.13s linear; 
+  margin-bottom: 20px;
+}
+
+.task-description:focus{
+  box-shadow: 0px 0px 15px black;
+}
+
+
+
+
+
+.input-file {
+	width: 100%;
+  display: flex;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.input-file-text {
+	padding: 0 10px;
+  text-align: left;
+	height: 50px;
+	width: 100%;
+  color: var(--first-color);
+  font-size: 16px;
+  background-color:var(--sub-color);
+  border-radius: 8px;
+  padding-top: 13px;
+  opacity: 0.8;
+} 
+.input-file input[type=file] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+ 
+
+
+@media (min-width: 1024px){
+  .task-difficult-select{
+    font-size: 20px;
+    width: 72px;
+    height: 60px;
+  }
+  .task-create-form label{
+    font-size: 20px;
+  }
+  .task-name-select{
+    font-size: 20px;
+    height: 60px;
+  }
+  .input-file-text{
+    height: 60px;
+    padding-top: 18px;
+    font-size: 18px;
+  }
 }

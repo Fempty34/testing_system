@@ -74,7 +74,7 @@
     padding-top: 20px;
 }
 .task-container:hover{
-    box-shadow: none;
+    box-shadow: 0px 0px 15px var(--first-color);
 }
 .task-container:active{
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
