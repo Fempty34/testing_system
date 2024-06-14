@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../theme.css" />
     <link rel="stylesheet" href="../menu/menu.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Testing system</title>
+    <title>Add new task</title>
     <link rel="icon" href="../assets/2.svg" type="image/x-icon">
   </head>
   <body>
@@ -65,9 +65,13 @@
                     <input type="text" class="task-name-select" placeholder="Select name">
                 </div>
                 <label for="task-description">Enter task description</label>
-                <textarea name="task-description" class="task-description" placeholder="Enter task description" autoco></textarea>
+                <textarea name="task-description" class="task-description" placeholder="Enter task description" autocomplete></textarea>
+                <label for="task-description">Enter Input</label>
+                <textarea name="task-description" class="task-description Input" placeholder="Enter task input" autocomplete></textarea>
+                <label for="task-description">Enter Outout</label>
+                <textarea name="task-description" class="task-description Output" placeholder="Enter task output" autocomplete></textarea>
                 <label class="input-file">
-                    <input type="file" id="files" name="file"> 
+                    <input type="file" id="files" name="file" required> 
                     <span class="input-file-text" type="text">Select file</span>       
                 </label>
                 <input type="submit" value="Create" class="button">         

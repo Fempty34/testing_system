@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="task_template.css" />
+    <link rel="stylesheet" href="../theme.css" />
+    <link rel="stylesheet" href="../menu/menu.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DFS</title>
+    <link rel="icon" href="../assets/2.svg" type="image/x-icon">
+  </head>
+  <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__icon">
+                    <a href="../tasks/tasks.html">Testing system</a>
+                </div>
+                <nav>
+                    <ul class="header__list">
+                        <li class="header__list-item"><a href="../tasks/tasks.html">Tasks</a></li>
+                        <li class="header__list-item"><a href="#">Contests</a></li>
+                        <li class="header__list-item active"><a href="../create/create.html">Create</a></li>
+                        <li class="header__list-item"><a href="#">Rating</a></li>
+                        <li class="header__list-item"><a href="#">Profile</a></li>
+                    </ul>
+                    <ul class="header__list header__list--mobile">
+                        <li class="header__list-item"><a href="../tasks/tasks.html" aria-label="Go to tasks">
+                                <img src="../menu/tasks.svg" alt="Go to tasks">
+                            </a></li>
+                        <li class="header__list-item"><a href="#" aria-label="Go to contests">
+                                <img src="../menu/contests.svg" alt="Go to contests">
+                            </a></li>
+                        <li class="header__list-item active"><a href="../create/create.html" aria-label="Go create">
+                                <img src="../menu/create.svg" alt="Go create">
+                            </a></li>
+                        <li class="header__list-item"><a href="#" aria-label="Go to rating">
+                                <img src="../menu/rating.svg" alt="Go to rating">
+                            </a></li>
+                        <li class="header__list-item"><a href="#" aria-label="Go to profile">
+                                <img src="../menu/profile.svg" alt="Go to profile">
+                            </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="main__container">
+            <div class="task-title">
+                <span>123A+</span>  Some task 
+            </div>
+            <p class="task-text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse provident magnam obcaecati quas dignissimos mollitia rem explicabo, autem aliquid ducimus praesentium? Asperiores, doloribus. Harum odit eius id nihil rerum laudantium!
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque excepturi porro, ipsa nisi repellat provident facilis amet beatae corporis non magnam nostrum voluptatum illum esse quidem obcaecati dolorum aut quis.
+            </p>
+            <div class="task-Input">
+                <span>Input data</span><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. modi reiciendis hic repellendus pariatur animi veritatis porro!
+
+            </div>
+            <div class="task-Output">
+                <span>Output data</span><br>
+                i ex dignissimos exercitationem consequatur est ipsam voluptatibus iusto culpa? Dolorum, molestias facere!
+            </div>
+            <div class="task-samples">
+                <div class="task-sample">
+                    <div class="task-sample-title">Samples</div>
+                    <div class="task-input-sample">
+                        <div class="task-input-title-container">
+                            <div class="task-input-title">
+                                Input data
+                            </div>
+                            <div class="task-input-copy">
+                                Copy
+                            </div>
+                        </div>
+                        <div class="task-data-container">
+                            <div class="task-input-data">
+                                6
+                            </div>
+                            <div class="task-input-data">
+                                0 1 4
+                            </div>
+                            <div class="task-input-data">
+                                0 2 7
+                            </div>
+                            <div class="task-input-data">
+                                1 2 3
+                            </div>
+                        </div>
+                    </div>
+                    <div class="task-input-sample">
+                        <div class="task-input-title-container">
+                            <div class="task-input-title">
+                                Output data
+                            </div>
+                            <div class="task-input-copy">
+                                Copy
+                            </div>
+                        </div>
+                        <div class="task-data-container">
+                            <div class="task-input-data">
+                                3
+                            </div>
+                            <div class="task-input-data">
+                                6
+                            </div>
+                            <div class="task-input-data">
+                                123120398
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="task-pass-container">
+                <div class="task-pass-title">Submit the solution</div>
+                <textarea name="task-solution" class="task-pass-textarea" placeholder="Type the solution"></textarea>
+                <div class="solution-language-container">
+                    <span>Choose your language: </span>
+                    <select name="language" class="solution-language" required>
+                        <option value="cpp17">C++17</option>
+                        <option value="cpp20">C++20</option>
+                        <option value="Rust">Rust</option>
+                        <option value="Python3.8">Python 3.8</option>
+                    </select>
+                </div>
+                <div class="pass-file">
+                    <span>File: </span>
+                    <input type="file" class="pass-file-input" name="file"> 
+                </div>
+                <button class="button">Send</button>
+            </div>
+
+            <div class="task-last-attempts">
+                <span>Last attempts</span>
+                <table class="task-attempts-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Size</th>
+                            <th>Language</th>
+                            <th>Status</th>
+                            <th>Test</th>
+                            <th>Show solution</th>
+                            <th>Show protocol</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>18.07.07 13:54:43</th>
+                            <th>569Kb</th>
+                            <th>C++17</th>
+                            <th>In process</th>
+                            <th>29</th>
+                            <th><a href="">Show</a></th>
+                            <th><a href="">Show</a></th>
+                        </tr>
+                        <tr>
+                            <th>18.07.07 13:54:43</th>
+                            <th>569Kb</th>
+                            <th>C++17</th>
+                            <th>In process</th>
+                            <th>29</th>
+                            <th><a href="">Show</a></th>
+                            <th><a href="">Show</a></th>
+                        </tr>
+                        <tr>
+                            <th>18.07.07 13:54:43</th>
+                            <th>569Kb</th>
+                            <th>C++17</th>
+                            <th>In process</th>
+                            <th>29</th>
+                            <th><a href="">Show</a></th>
+                            <th><a href="">Show</a></th>
+                        </tr>
+                        <tr>
+                            <th>18.07.07 13:54:43</th>
+                            <th>569Kb</th>
+                            <th>C++17</th>
+                            <th>In process</th>
+                            <th>29</th>
+                            <th><a href="">Show</a></th>
+                            <th><a href="">Show</a></th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script src="task_template.js"></script>
+    </body>
+</html>
